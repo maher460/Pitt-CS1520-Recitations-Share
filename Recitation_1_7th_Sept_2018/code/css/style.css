@@ -1,0 +1,15 @@
+#box1{
+	background-color: blue;
+}
+#box2{
+	background-color: red;
+}
+.boxes{
+	width:500px;
+	height: 100px;
+	margin: 50px;
+	padding: 50px;
+}
+#one{
+	margin: 50px;
+}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}
+    Paper Shop
+{% endblock %}
+{% block body %}
+<h2>Cart Items:</h2>
+<ul>
+  {% for item in items %}
+    <li>{{ item.name }}</li>
+  {% else %}
+    <li><em>There's no item so far.</em></li>
+  {% endfor %}
+</ul>
+{% endblock %}

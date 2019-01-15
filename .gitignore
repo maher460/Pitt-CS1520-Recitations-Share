@@ -1,0 +1,10 @@
+# Do not track the contents of these folders
+Recitation_7_26th_Oct_2018/DunderMifflin/src/DunderMifflin-venv/
+Recitation_9_4th_Nov_2018/DunderMifflin/src/DunderMifflin-venv/
+
+# Do not track these filetypes:
+*.pyc
+**.pyc
+*-venv/
+
+

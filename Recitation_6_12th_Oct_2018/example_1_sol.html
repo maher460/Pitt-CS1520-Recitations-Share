@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Midterm</title>
+    <script type="text/javascript">
+        function a1(event) { alert('Alert1: ' + ", target = " + event.target.tagName + ", currentTarget = " + event.currentTarget.tagName); }
+        function a2(event) { alert('Alert2: ' + ", target = " + event.target.tagName + ", currentTarget = " + event.currentTarget.tagName); }
+        function a3(event) { alert('Alert3: ' + ", target = " + event.target.tagName + ", currentTarget = " + event.currentTarget.tagName); }
+        function a4(event) { alert('Alert4: ' + ", target = " + event.target.tagName + ", currentTarget = " + event.currentTarget.tagName); }
+    </script>
+</head>
+<body>
+    <table id="action-table">
+        <tbody id="action-body">
+            <tr id="action-row">
+                <td>foo</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td id="action-entry">baz</td>
+                <td>fuz</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var actionTable = document.getElementById("action-table");
+        var actionBody = document.getElementById("action-body");
+        var actionRow = document.getElementById("action-row");
+        var actionEntry = document.getElementById("action-entry");
+
+        actionTable.addEventListener('click', a1, false);
+        actionBody.addEventListener('click', a2, true);
+        actionEntry.addEventListener('click', a3, true);
+
+        // YOUR CODE GOES HERE
+
+    </script>
+</body>
+</html>
